@@ -7,7 +7,7 @@ AngularJS là một khung phát triển front end mã nguồn mở triển khai 
 
 ## thực hiện CURD with angularjs
 
-### b1 tạo api:
+### bước 1: tạo api:
 
 bạn có thể tạo api [tại đây](https://mockapi.io/)
 
@@ -59,12 +59,13 @@ sau khi bạn tạo api sẽ có đường dẫn api sau: https://63379dcf132b46
 </table>
 
 
-### b2: tạo file html
+### bước : tạo file html
 
 
 index.html
 
 > lưu ý:
+
 - Thêm tập lệnh dưới đây vào bên trong thẻ <> của tệp html. Đó là liên kết CDN sẽ giúp bắt đầu với Angular.\
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 - Tạo tệp main.js trong cùng một thư mục và tham chiếu tệp đó bằng thẻ script:
@@ -157,7 +158,7 @@ index.html
 </body>
  ```
 
-### 3: 
+### bước 3: hiển thị list product 
 
   
 ```md
@@ -191,7 +192,7 @@ $http.get(productAPI)
   $http.get(url).then().catch() là viết tắt của $http({method : "GET", url : url}).then().catch()
   
   
-### 4: thêm mới products
+### bước 4: thêm mới products
   
   
   ```
@@ -204,7 +205,7 @@ $http.get(productAPI)
   
   ```
  
-### 5: update sản phẩm
+### bước 5: update sản phẩm
   
   ```
   
@@ -225,7 +226,7 @@ $scope.edit = function(){
         .catch(function(e){console.log(e)})}
   ```
 
-### 5: delete 
+### bước 6: delete 
   
   ```
   $scope.delete = function(item){
@@ -238,5 +239,5 @@ $scope.edit = function(){
 })
   
   ```
-  > bạn có thể xem kết quả [ở dây](https://thangdtph27626.github.io/demoCURDAngular.github.io/)
+  > bạn có thể xem kết quả [ở dây](https://thangdtph27626.github.io/demoCURDAngular.github.io/)\
   > bạn có thể lấy toàn bộ source code [tại đây](https://github.com/thangdtph27626/demoCURDAngular.github.io)
